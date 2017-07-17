@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Add";
+}
+
+<h2>Add Student</h2>
+
+<div class="form-group">
+    <label for="txtName">Name</label>
+    <input type="text" class="form-control" id="txtName" placeholder="Enter name">
+</div>
+<div class="form-group">
+    <label for="txtLastName">Last Name</label>
+    <input type="text" class="form-control" id="txtLastName" placeholder="Enter last name">
+</div>
+
+<button type="submit" class="btn btn-primary">เพิ่ม</button>
+<button type="button" class="btn btn-danger" onclick="location.href='@Url.Action("Index", "Student")'" >ยกเลิก</button>
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div> 
